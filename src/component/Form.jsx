@@ -19,7 +19,7 @@ function Form() {
             <img src={action === 'LOGIN' ? loginLogo : userLogo} alt="" />
             <h1 style={{ padding: "10px" }}>{action}</h1>
             {
-                action === "LOGIN" ? `` : <div className='formBox'><TextField className='w-100' size="small" helperText={username===false?"":"Field Required"} id="outlined-basic"  label="User Name" variant="outlined"  name="username"/></div>
+                action === "LOGIN" ? `` : <div className='formBox'><TextField className='w-100' size="small" helperText="" id="outlined-basic"  label="User Name" variant="outlined"  name="username"/></div>
             }
 
             <div className='formBox'><TextField className='w-100' size="small" helperText="Field required" id="outlined-basic" label="Email address" variant="outlined"  /></div>
